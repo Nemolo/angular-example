@@ -1,0 +1,9 @@
+<p>List Container</p>
+<ul>
+  <app-list-element *ngFor="let one of list" [id]="one.id" [name]="one.name" (something)="what($event)"></app-list-element>
+</ul>
+
+<button (click)="randomize()">randomize Outer</button>
+<p>Double Value: {{ doubleLocal }}</p>
+
+<app-double-way [(double)]="doubleLocal"></app-double-way>

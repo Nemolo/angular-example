@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'This is my first application';
+  h1ID = 'my-id'
+  color = '#444'
 }
