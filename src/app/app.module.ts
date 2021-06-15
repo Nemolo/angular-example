@@ -8,6 +8,14 @@ import { HelloWorldNgifComponent } from './hello-world-ngif/hello-world-ngif.com
 import { ListElementComponent } from './list-element/list-element.component';
 import { ListContainerComponent } from './list-container/list-container.component';
 import { DoubleWayComponent } from './double-way/double-way.component';
+import { HomeComponent } from './home/home.component';
+import { ListPageComponent } from './list-page/list-page.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { PageWithSubpagesComponent } from './page-with-subpages/page-with-subpages.component';
+import { SubPageOneComponent } from './sub-page-one/sub-page-one.component';
+import { SubPageTwoComponent } from './sub-page-two/sub-page-two.component';
+import { SubPageThreeComponent } from './sub-page-three/sub-page-three.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +24,15 @@ import { DoubleWayComponent } from './double-way/double-way.component';
     HelloWorldNgifComponent,
     ListElementComponent,
     ListContainerComponent,
-    DoubleWayComponent
+    DoubleWayComponent,
+    HomeComponent,
+    ListPageComponent,
+    NavigationComponent,
+    PageWithSubpagesComponent,
+    SubPageOneComponent,
+    SubPageTwoComponent,
+    SubPageThreeComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
