@@ -1,0 +1,34 @@
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>
+    username
+    <input type="text" [class.invalid]="!form.controls.username.valid" formControlName="username" />
+  </label>
+  <label>
+    password
+    <input type="password" formControlName="password" />
+  </label>
+  <label>
+    remember me
+    <input type="checkbox" formControlName="rememberme" />
+  </label>
+  <label>
+    select
+    <select formControlName="gender">
+      <option value="f">Female</option>
+      <option value="m">Male</option>
+    </select>
+  </label>
+  
+  <button class="btn" type="submit">submit</button>
+</form>
+{{ form.value | json }}
+
+
+<div>
+  newsletter
+  <input type="email" [formControl]="newsletterEmail" />
+  {{ newsletterEmail.value }}
+  {{ newsletterEmail.valid | json }}
+</div>
+

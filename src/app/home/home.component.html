@@ -1,6 +1,7 @@
 <div class="row">
   <div class="col">
     <p>home works!</p>
-    <button class="btn btn-debug" (click)="navigate(1)">move to subpage 1</button>
+    <input type="number" [formControl]="pageNumber">
+    <button class="btn btn-debug" [disabled]="!pageNumber.valid" (click)="navigate(pageNumber.value)">move to subpage 1</button>
   </div>
 </div>

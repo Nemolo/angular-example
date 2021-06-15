@@ -16,6 +16,8 @@ import { SubPageOneComponent } from './sub-page-one/sub-page-one.component';
 import { SubPageTwoComponent } from './sub-page-two/sub-page-two.component';
 import { SubPageThreeComponent } from './sub-page-three/sub-page-three.component';
 import { DetailComponent } from './detail/detail.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,14 @@ import { DetailComponent } from './detail/detail.component';
     SubPageOneComponent,
     SubPageTwoComponent,
     SubPageThreeComponent,
-    DetailComponent
+    DetailComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
