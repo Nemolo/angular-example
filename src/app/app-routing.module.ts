@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DetailComponent } from './detail/detail.component';
 import { HomeComponent } from './home/home.component';
 import { ListPageComponent } from './list-page/list-page.component';
+import { LoginPageComponent } from './login-page/login-page.component';
 import { PageWithSubpagesComponent } from './page-with-subpages/page-with-subpages.component';
 import { SubPageOneComponent } from './sub-page-one/sub-page-one.component';
 import { SubPageThreeComponent } from './sub-page-three/sub-page-three.component';
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'detail/:detailID',
     component: DetailComponent
+  },
+  {
+    path: 'login',
+    component: LoginPageComponent
   },
   {
     path: 'page-with-subpages',
