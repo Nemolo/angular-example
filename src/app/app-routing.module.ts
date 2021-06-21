@@ -8,6 +8,7 @@ import { PageWithSubpagesComponent } from './page-with-subpages/page-with-subpag
 import { SubPageOneComponent } from './sub-page-one/sub-page-one.component';
 import { SubPageThreeComponent } from './sub-page-three/sub-page-three.component';
 import { SubPageTwoComponent } from './sub-page-two/sub-page-two.component';
+import { TestGuard } from './test.guard';
 
 const routes: Routes = [
   {
@@ -29,6 +30,9 @@ const routes: Routes = [
   {
     path: 'page-with-subpages',
     component: PageWithSubpagesComponent,
+    canActivateChild: [
+      TestGuard
+    ],
     children: [
       {
         path: 'sub-page-1',
@@ -72,7 +76,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableTracing: true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
