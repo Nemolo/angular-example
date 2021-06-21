@@ -1,5 +1,8 @@
-<h1 [id]="h1ID" [style.color]="color">{{ title }}</h1>
+<h1 [id]="h1ID" [style.color]="color" [class.d-none]="showTitle">
+  {{ title }}
+</h1>
 <app-navigation></app-navigation>
+<button mat-raised-button (click)="showTitle = !showTitle">button</button>
 <div class="container-fluid">
   <router-outlet></router-outlet>
 </div>
